@@ -1,0 +1,13 @@
+Duplicates
+
+Part 1:
+SELECT yarn_name, COUNT(vendor_id)
+FROM yarn
+GROUP BY yarn_name
+HAVING COUNT (vendor_id) > 1;
+
+Part 2:
+SELECT yarn_name, vendor_id, COUNT(*)
+FROM yarn
+GROUP BY yarn_name, vendor_id
+HAVING COUNT(*) > 1;

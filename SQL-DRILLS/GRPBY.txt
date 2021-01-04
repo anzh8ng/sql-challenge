@@ -1,0 +1,5 @@
+Groupby, Don't Cry
+
+SELECT state, AVG(duration)
+FROM usa_ufo
+GROUP BY state;
